@@ -174,7 +174,7 @@ ON `exams`.`id` = `exam_student`.`exam_id`
 INNER JOIN `courses`
 ON `courses`.`id` = `exams`.`course_id`
 
-GROUP BY `students`.`id`, `courses`.`name`
+GROUP BY `students`.`id`, `courses`.`id`
 
 HAVING `max_vote` >= 18;
 ```
